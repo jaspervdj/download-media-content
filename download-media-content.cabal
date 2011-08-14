@@ -1,0 +1,26 @@
+Name:       download-media-content
+Version:    0.0.0.1
+Synopsis:   Simple tool to download images from RSS feeds (e.g. Flickr, Picasa)
+Homepage:   http://github.com/jaspervdj/download-media-content
+Author:     Jasper Van der Jeugt <m@jaspervdj.be>
+Maintainer: Jasper Van der Jeugt <m@jaspervdj.be>
+
+License:      BSD3
+License-file: LICENSE
+
+Category:      Application
+Build-type:    Simple
+Cabal-version: >= 1.2
+
+Executable download-media-content
+  Hs-source-dirs: src
+  Main-is:        Main.hs
+  Other-modules:  Network.DownloadMediaContent
+
+  Build-depends:       
+    base            >= 4    && < 5,
+    tagsoup         >= 0.11 && < 0.13,
+    text            >= 0.11 && < 1.0,
+    bytestring      >= 0.9  && < 1.0,
+    http-enumerator >= 0.6  && < 0.7,
+    filepath        >= 1.0  && < 1.3
